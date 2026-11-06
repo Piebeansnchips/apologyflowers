@@ -4,220 +4,377 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apology Flowers | Because Sorry Isn't Enough</title>
-<meta name="description" content="Premium flowers for people who have spectacularly messed up. Find your perfect apology bouquet.">
+<title>Apology Flowers | Making Things Better</title>
+<meta name="description" content="Premium floral apologies for life's unfortunate incidents. Because sometimes sorry isn't enough.">
 <style>
 :root {
-  --cream: #f8f5ef;
-  --green: #263e32;
-  --pink: #d9a6a2;
-  --dark: #252923;
-  --muted: #77776e;
+  --cream:#f8f5ef;
+  --green:#263e32;
+  --pink:#d9a6a2;
+  --dark:#252923;
+  --muted:#77776e;
+  --white:#fff;
 }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
 body {
-  margin: 0;
-  background: var(--cream);
-  color: var(--dark);
-  font-family: Arial, sans-serif;
+  margin:0;
+  background:var(--cream);
+  color:var(--dark);
+  font-family:Arial,sans-serif;
 }
 header {
-  padding: 22px 7%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #e7e0d5;
+  padding:22px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #e7e0d5;
 }
 .logo {
-  font-family: Georgia, serif;
-  font-size: 25px;
-  color: var(--green);
-  letter-spacing: -1px;
+  font-family:Georgia,serif;
+  font-size:26px;
+  color:var(--green);
+  letter-spacing:-1px;
 }
-.logo span { color: #b77c79; }
-nav { display: flex; gap: 25px; }
+.logo span {color:#b77c79}
+nav {display:flex;gap:25px}
 nav a {
-  text-decoration: none;
-  color: var(--green);
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  text-decoration:none;
+  color:var(--green);
+  font-size:11px;
+  letter-spacing:1px;
+  text-transform:uppercase;
 }
 .hero {
-  min-height: 560px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 65px 8%;
-  gap: 45px;
+  min-height:570px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  padding:65px 8%;
+  gap:45px;
 }
 .eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #a36f6c;
-  font-size: 11px;
-  font-weight: bold;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  color:#a36f6c;
+  font-size:11px;
+  font-weight:bold;
 }
 h1 {
-  font-family: Georgia, serif;
-  font-weight: normal;
-  font-size: clamp(48px, 6vw, 76px);
-  line-height: 1.05;
-  color: var(--green);
-  margin: 20px 0;
+  font-family:Georgia,serif;
+  font-weight:normal;
+  font-size:clamp(48px,6vw,76px);
+  line-height:1.05;
+  color:var(--green);
+  margin:20px 0;
 }
 .hero p {
-  line-height: 1.8;
-  color: var(--muted);
-  max-width: 440px;
+  line-height:1.9;
+  color:var(--muted);
+  max-width:450px;
 }
 .btn {
-  display: inline-block;
-  background: var(--green);
-  color: white;
-  padding: 16px 27px;
-  text-decoration: none;
-  margin-top: 20px;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  display:inline-block;
+  background:var(--green);
+  color:white;
+  padding:16px 27px;
+  text-decoration:none;
+  margin-top:20px;
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
 }
 .hero-image {
-  width: 100%;
-  height: 440px;
-  object-fit: cover;
+  width:100%;
+  height:440px;
+  object-fit:cover;
 }
 .intro {
-  background: var(--green);
-  color: white;
-  text-align: center;
-  padding: 65px 20px;
+  background:var(--green);
+  color:white;
+  text-align:center;
+  padding:70px 20px;
 }
 .intro h2 {
-  font-family: Georgia, serif;
-  font-size: 38px;
-  font-weight: normal;
-  margin: 12px 0;
+  font-family:Georgia,serif;
+  font-size:40px;
+  font-weight:normal;
+  margin:15px 0;
 }
 .intro p {
-  color: #d8ddd6;
-  line-height: 1.8;
+  color:#d8ddd6;
+  line-height:1.9;
 }
-section.products {
-  padding: 85px 7%;
-  text-align: center;
+section {scroll-margin-top:20px}
+.products {
+  padding:85px 7%;
+  text-align:center;
 }
-h2.section-title {
-  font-family: Georgia, serif;
-  color: var(--green);
-  font-size: 43px;
-  font-weight: normal;
-  margin: 15px 0;
+.section-title {
+  font-family:Georgia,serif;
+  color:var(--green);
+  font-size:43px;
+  font-weight:normal;
+  margin:15px 0;
 }
 .sub {
-  color: var(--muted);
-  margin-bottom: 45px;
-  line-height: 1.7;
+  color:var(--muted);
+  margin-bottom:45px;
+  line-height:1.8;
 }
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  text-align: left;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  text-align:left;
 }
 .product {
-  background: white;
-  padding-bottom: 25px;
+  background:white;
+  padding-bottom:25px;
+  transition:transform .2s;
 }
+.product:hover {transform:translateY(-4px)}
 .product img {
-  width: 100%;
-  height: 245px;
-  object-fit: cover;
+  width:100%;
+  height:245px;
+  object-fit:cover;
 }
-.product-content { padding: 20px 22px; }
+.product-content {padding:20px 22px}
 .product h3 {
-  font-family: Georgia, serif;
-  font-size: 23px;
-  font-weight: normal;
-  color: var(--green);
-  margin: 7px 0;
+  font-family:Georgia,serif;
+  font-size:24px;
+  font-weight:normal;
+  color:var(--green);
+  margin:8px 0;
 }
 .price {
-  color: #a36f6c;
-  font-size: 23px;
-  font-family: Georgia, serif;
-  margin: 12px 0;
+  color:#a36f6c;
+  font-size:25px;
+  font-family:Georgia,serif;
+  margin:12px 0;
 }
 .product p {
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.7;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
 }
 .level {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #a36f6c;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  color:#a36f6c;
 }
 .note {
-  font-size: 11px;
-  color: #888;
-  font-style: italic;
-  margin-top: 15px;
+  font-size:11px;
+  color:#888;
+  font-style:italic;
+  margin-top:15px;
 }
+
+/* APOLOGY SLIDER */
+.assessment {
+  background:#eee9df;
+  padding:85px 8%;
+  text-align:center;
+}
+.slider-box {
+  background:white;
+  max-width:650px;
+  margin:35px auto 0;
+  padding:35px;
+  text-align:left;
+}
+.slider-box input {
+  width:100%;
+  accent-color:#a36f6c;
+  margin:25px 0;
+  cursor:pointer;
+}
+.slider-labels {
+  display:flex;
+  justify-content:space-between;
+  font-size:11px;
+  color:var(--muted);
+}
+.result {
+  border-top:1px solid #eee;
+  margin-top:25px;
+  padding-top:25px;
+}
+.result h3 {
+  font-family:Georgia,serif;
+  font-size:29px;
+  font-weight:normal;
+  color:var(--green);
+  margin:12px 0;
+}
+.result-price {
+  font-family:Georgia,serif;
+  font-size:35px;
+  color:#a36f6c;
+}
+.result-description {
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.8;
+}
+.result-advice {
+  font-size:12px;
+  font-style:italic;
+  color:#a36f6c;
+  margin-top:15px;
+}
+
+/* JIM INDEX */
+.index-section {
+  background:var(--green);
+  color:white;
+  padding:75px 8%;
+  text-align:center;
+}
+.index-section h2 {
+  font-family:Georgia,serif;
+  font-size:40px;
+  font-weight:normal;
+}
+.index-section .eyebrow {color:var(--pink)}
+.stats {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+  margin-top:45px;
+}
+.stat-number {
+  font-family:Georgia,serif;
+  font-size:42px;
+  color:var(--pink);
+}
+.stat-label {
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#d8ddd6;
+  line-height:1.6;
+}
+.index-disclaimer {
+  font-size:10px;
+  color:#aeb9b0;
+  margin-top:35px;
+}
+
+/* HOW IT WORKS */
 .how {
-  background: #eee9df;
-  padding: 75px 8%;
-  text-align: center;
+  background:#eee9df;
+  padding:75px 8%;
+  text-align:center;
 }
 .steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
-  margin-top: 45px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:35px;
+  margin-top:45px;
 }
 .steps h3 {
-  font-family: Georgia, serif;
-  font-size: 24px;
-  color: var(--green);
-  font-weight: normal;
+  font-family:Georgia,serif;
+  font-size:24px;
+  color:var(--green);
+  font-weight:normal;
 }
 .steps p {
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.7;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.8;
 }
+
+/* TESTIMONIALS */
+.testimonials {
+  padding:85px 8%;
+  text-align:center;
+}
+.quote-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  margin-top:40px;
+}
+.quote {
+  background:white;
+  padding:30px 25px;
+  text-align:left;
+}
+.quote p {
+  font-family:Georgia,serif;
+  font-size:19px;
+  line-height:1.7;
+  color:var(--green);
+}
+.quote small {
+  color:var(--muted);
+  font-size:11px;
+}
+
+/* ABOUT */
 .about {
-  padding: 85px 15%;
-  text-align: center;
+  padding:85px 15%;
+  text-align:center;
 }
 .about p {
-  max-width: 650px;
-  margin: 20px auto;
-  line-height: 1.9;
-  color: var(--muted);
+  max-width:680px;
+  margin:20px auto;
+  line-height:1.9;
+  color:var(--muted);
+}
+
+/* FAQ */
+.faq {
+  background:#eee9df;
+  padding:75px 10%;
+}
+.faq-inner {max-width:750px;margin:auto}
+.faq-item {
+  padding:20px 0;
+  border-bottom:1px solid #d9d1c5;
+}
+.faq-item h3 {
+  font-family:Georgia,serif;
+  font-weight:normal;
+  color:var(--green);
+  font-size:19px;
+}
+.faq-item p {
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.8;
 }
 footer {
-  background: var(--green);
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+  background:var(--green);
+  color:white;
+  text-align:center;
+  padding:45px 20px;
 }
-footer p { font-size: 12px; color: #d8ddd6; line-height: 1.8; }
-footer .logo { color: white; }
-@media(max-width: 750px) {
-  header { flex-direction: column; gap: 17px; }
-  nav { gap: 15px; flex-wrap: wrap; justify-content: center; }
-  nav a { font-size: 10px; }
-  .hero { grid-template-columns: 1fr; padding: 50px 7%; }
-  .hero-image { height: 300px; }
-  .grid { grid-template-columns: 1fr; }
-  .steps { grid-template-columns: 1fr; }
-  .about { padding: 65px 8%; }
+footer .logo {color:white}
+footer p {
+  font-size:12px;
+  color:#d8ddd6;
+  line-height:1.8;
+}
+
+@media(max-width:750px) {
+  header {flex-direction:column;gap:18px}
+  nav {gap:14px;flex-wrap:wrap;justify-content:center}
+  nav a {font-size:10px}
+  .hero {grid-template-columns:1fr;padding:50px 7%}
+  .hero-image {height:310px}
+  .grid {grid-template-columns:1fr}
+  .stats {grid-template-columns:repeat(2,1fr)}
+  .steps {grid-template-columns:1fr}
+  .quote-grid {grid-template-columns:1fr}
+  .about {padding:65px 8%}
+  .slider-box {padding:25px 20px}
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -225,33 +382,68 @@ footer .logo { color: white; }
   <nav>
     <a href="#home">Home</a>
     <a href="#flowers">The Collection</a>
+    <a href="#assessment">Apology Scale</a>
     <a href="#about">Our Story</a>
   </nav>
 </header>
 
 <main>
+
+<!-- HOMEPAGE -->
 <section class="hero" id="home">
   <div>
     <div class="eyebrow">The art of saying sorry</div>
-    <h1>Because sorry isn't always enough.</h1>
-    <p>Some situations require more than a text message. Whether you've put your foot in it or spectacularly crossed the line, we believe there's a bouquet for every level of regret.</p>
-    <a class="btn" href="#flowers">Find your apology</a>
+    <h1>Jim's made another mistake.</h1>
+    <p>We've all been there. Unfortunately, some people have been there more than others.</p>
+    <p>Whether you've put your foot in it or spectacularly crossed the line, we believe there's a bouquet for every level of regret.</p>
+    <a class="btn" href="#assessment">Assess the damage</a>
   </div>
   <img class="hero-image"
   src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=1000&q=85"
-  alt="Beautiful premium pink floral arrangement">
+  alt="Beautiful premium floral arrangement">
 </section>
 
 <section class="intro">
   <div class="eyebrow">Apologies, professionally handled</div>
-  <h2>We've all been there.</h2>
+  <h2>Life is complicated. Jim is more complicated.</h2>
+  <p>Words are sometimes insufficient. Gestures are occasionally required.</p>
   <p>Fortunately, we've made a science out of making things better.</p>
   <p>Five carefully considered levels of floral remorse.<br>One very important question: just how badly have you messed up?</p>
 </section>
 
+<!-- INTERACTIVE ASSESSMENT -->
+<section class="assessment" id="assessment">
+  <div class="eyebrow">The Apology Assessment Tool</div>
+  <h2 class="section-title">How badly have you upset someone?</h2>
+  <p class="sub">Be honest. This is no time for downplaying your actions.</p>
+
+  <div class="slider-box">
+    <strong>Drag the slider to assess the situation.</strong>
+    <input type="range" id="apologySlider" min="0" max="5" step="1" value="2">
+    <div class="slider-labels">
+      <span>Minor indiscretion</span>
+      <span>Catastrophic failure</span>
+    </div>
+
+    <div class="result">
+      <div class="level" id="resultLevel">LEVEL 03 · SERIOUS INCIDENT</div>
+      <h3 id="resultName">The Public Apology</h3>
+      <div class="result-price" id="resultPrice">£75</div>
+      <p class="result-description" id="resultDescription">
+        Other people are now aware of your behaviour. Voices have been raised. Friends and family are involved.
+      </p>
+      <p class="result-advice" id="resultAdvice">
+        Jim's recommendation: Do not attempt to defend yourself.
+      </p>
+    </div>
+  </div>
+  <p class="note">Our assessment tool is not legally binding. We cannot guarantee forgiveness.</p>
+</section>
+
+<!-- FLOWER COLLECTION -->
 <section class="products" id="flowers">
-  <div class="eyebrow">The Apology Scale</div>
-  <h2 class="section-title">Choose your level of regret.</h2>
+  <div class="eyebrow">The Official Collection</div>
+  <h2 class="section-title">The Apology Scale.</h2>
   <p class="sub">An honest assessment is the first step towards forgiveness.<br>Choose wisely. Underestimating the situation can be costly.</p>
 
   <div class="grid">
@@ -260,9 +452,9 @@ footer .logo { color: white; }
       <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=700&q=80" alt="Pink flowers">
       <div class="product-content">
         <div class="level">Level 01 · Minor Offence</div>
-        <h3>The Slightly Sorry</h3>
+        <h3>The White Flag</h3>
         <div class="price">£25</div>
-        <p>For minor indiscretions. A poorly timed comment, forgetting to put the bins out or eating the last biscuit.</p>
+        <p>For when you've been mildly irritating. A slightly inappropriate comment, forgotten birthday or minor domestic incompetence.</p>
         <p class="note">Forgiveness likely. Damage relatively limited.</p>
       </div>
     </article>
@@ -271,31 +463,31 @@ footer .logo { color: white; }
       <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=700&q=80" alt="Mixed flower bouquet">
       <div class="product-content">
         <div class="level">Level 02 · Moderate Incident</div>
-        <h3>The Proper Cock-Up</h3>
+        <h3>The Damage Control</h3>
         <div class="price">£45</div>
-        <p>For when you've said something you shouldn't have, forgotten something important or made a fairly spectacular tit of yourself.</p>
+        <p>You've put your foot in it. You've upset someone. They've told someone else. It's gaining momentum.</p>
         <p class="note">An apology is definitely required.</p>
       </div>
     </article>
 
     <article class="product">
-      <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=700&q=80" alt="Luxury roses">
+      <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=700&q=80" alt="Luxury flowers">
       <div class="product-content">
         <div class="level">Level 03 · Serious Incident</div>
-        <h3>The Damage Limitation</h3>
+        <h3>The Public Apology</h3>
         <div class="price">£75</div>
-        <p>You've really done it this time. Voices have been raised. Friends and family are involved. Immediate action is advised.</p>
-        <p class="note">Do not attempt to defend yourself.</p>
+        <p>Other people are now aware of your behaviour. Voices have been raised. Friends and family are involved.</p>
+        <p class="note">Jim's recommendation: Do not attempt to defend yourself.</p>
       </div>
     </article>
 
     <article class="product">
       <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=700&q=80" alt="Luxury floral arrangement">
       <div class="product-content">
-        <div class="level">Level 04 · Relationship Preservation</div>
+        <div class="level">Level 04 · Relationship at Risk</div>
         <h3>The Last Chance Saloon</h3>
         <div class="price">£125</div>
-        <p>Potential divorce proceedings. Christmas has been cancelled. Your name is being discussed in the family WhatsApp group.</p>
+        <p>Things have taken a turn. Sleeping arrangements are under review. Your belongings may be outside.</p>
         <p class="note">A substantial gesture is required.</p>
       </div>
     </article>
@@ -304,15 +496,15 @@ footer .logo { color: white; }
       <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=700&q=80" alt="Extravagant flower bouquet">
       <div class="product-content">
         <div class="level">Level 05 · Catastrophic Failure</div>
-        <h3>The Nuclear Apology</h3>
+        <h3>The Jim Special</h3>
         <div class="price">£250</div>
-        <p>There are no words. Lawyers may be involved. You have disappointed several generations. Money is no longer the concern.</p>
-        <p class="note">We recommend not making eye contact.</p>
+        <p>There is no defending this. You have disappointed several generations. We recommend flowers, silence and possibly legal representation.</p>
+        <p class="note">Our founder's personal favourite. Naturally.</p>
       </div>
     </article>
 
     <article class="product">
-      <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=80" alt="Beautiful flowers">
+      <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=80" alt="Beautiful flower arrangement">
       <div class="product-content">
         <div class="level">Special Request · Unclassified</div>
         <h3>The Unforgivable</h3>
@@ -326,6 +518,34 @@ footer .logo { color: white; }
   <p class="note">All bouquets and prices are illustrative. No flowers are currently available to order.</p>
 </section>
 
+<!-- JIM INDEX -->
+<section class="index-section">
+  <div class="eyebrow">An ongoing investigation</div>
+  <h2>The Jim Index.</h2>
+  <p>Monitoring the situation. One incident at a time.</p>
+
+  <div class="stats">
+    <div>
+      <div class="stat-number">17</div>
+      <div class="stat-label">Apologies issued</div>
+    </div>
+    <div>
+      <div class="stat-number">6</div>
+      <div class="stat-label">Relationships tested</div>
+    </div>
+    <div>
+      <div class="stat-number">23</div>
+      <div class="stat-label">Bouquets purchased</div>
+    </div>
+    <div>
+      <div class="stat-number">0</div>
+      <div class="stat-label">Lessons learned</div>
+    </div>
+  </div>
+  <p class="index-disclaimer">Figures are fictional. The underlying behaviour is less easily disputed.</p>
+</section>
+
+<!-- HOW IT WORKS -->
 <section class="how">
   <div class="eyebrow">Simple. Effective. Necessary.</div>
   <h2 class="section-title">How it works.</h2>
@@ -345,21 +565,136 @@ footer .logo { color: white; }
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="eyebrow">Kind words from our clients</div>
+  <h2 class="section-title">Don't just take our word for it.</h2>
+  <div class="quote-grid">
+    <div class="quote">
+      <p>"I genuinely thought we'd reached the end of the road. The flowers were lovely, though."</p>
+      <small>— Someone Jim has upset</small>
+    </div>
+    <div class="quote">
+      <p>"A lovely gesture. Still not speaking to him."</p>
+      <small>— A previous recipient</small>
+    </div>
+    <div class="quote">
+      <p>"Third bouquet this year. Starting to think he enjoys this."</p>
+      <small>— A concerned family member</small>
+    </div>
+  </div>
+  <p class="note">Testimonials are fictional. Any resemblance to actual incidents is entirely intentional.</p>
+</section>
+
+<!-- ABOUT -->
 <section class="about" id="about">
   <div class="eyebrow">A little about us</div>
   <h2 class="section-title">Born out of necessity.</h2>
-  <p>At Apology Flowers, we understand that life doesn't always go to plan. Words are sometimes insufficient, gestures are occasionally required, and some situations simply call for a really rather impressive bunch of flowers.</p>
+  <p>Apology Flowers was founded following years of personal experience, repeated misunderstandings and an frankly unsustainable expenditure on flowers.</p>
+  <p>Our founder, Jim, understands that life doesn't always go to plan. Words are sometimes insufficient, gestures are occasionally required, and some situations simply call for a really rather impressive bunch of flowers.</p>
   <p>Our philosophy is simple: take responsibility, make amends, and never underestimate the power of a well-presented bouquet.</p>
   <p><strong>Apology Flowers. Making things better, one bouquet at a time.</strong></p>
 </section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-inner">
+    <div class="eyebrow">The small print</div>
+    <h2 class="section-title">Frequently asked questions.</h2>
+
+    <div class="faq-item">
+      <h3>Can flowers fix everything?</h3>
+      <p>No. But they can make an uncomfortable conversation slightly more manageable.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can you guarantee forgiveness?</h3>
+      <p>Absolutely not. We supply flowers, not miracles.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does Jim receive a loyalty discount?</h3>
+      <p>We've discussed this internally. The answer remains no.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I send flowers anonymously?</h3>
+      <p>Yes. Plausible deniability is important.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if I've made things worse?</h3>
+      <p>We recommend upgrading your bouquet and reconsidering your approach to interpersonal relationships.</p>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer>
   <div class="logo">Apology<span>Flowers</span>.</div>
   <p>Because sometimes, sorry just isn't enough.</p>
-  <p>A parody concept website. No actual flowers are currently sold or supplied.</p>
+  <p>Apology Flowers is a parody concept website.<br>No actual flowers are currently sold or supplied.</p>
   <p>© 2026 Apology Flowers</p>
 </footer>
+
+<script>
+const levels = [
+  {
+    level:"LEVEL 01 · MINOR OFFENCE",
+    name:"The White Flag",
+    price:"£25",
+    description:"A slightly inappropriate comment, forgotten birthday or minor domestic incompetence.",
+    advice:"Jim's recommendation: A quick apology should probably do it."
+  },
+  {
+    level:"LEVEL 02 · MODERATE INCIDENT",
+    name:"The Damage Control",
+    price:"£45",
+    description:"You've upset someone. They've told someone else. It's gaining momentum.",
+    advice:"Jim's recommendation: Get ahead of the situation."
+  },
+  {
+    level:"LEVEL 03 · SERIOUS INCIDENT",
+    name:"The Public Apology",
+    price:"£75",
+    description:"Other people are now aware of your behaviour. Voices have been raised. Friends and family are involved.",
+    advice:"Jim's recommendation: Do not attempt to defend yourself."
+  },
+  {
+    level:"LEVEL 04 · RELATIONSHIP AT RISK",
+    name:"The Last Chance Saloon",
+    price:"£125",
+    description:"Things have taken a turn. Sleeping arrangements are under review. Your belongings may be outside.",
+    advice:"Jim's recommendation: A substantial gesture is required."
+  },
+  {
+    level:"LEVEL 05 · CATASTROPHIC FAILURE",
+    name:"The Jim Special",
+    price:"£250",
+    description:"There is no defending this. You have disappointed several generations.",
+    advice:"Jim's recommendation: Flowers, silence and possibly legal representation."
+  },
+  {
+    level:"SPECIAL REQUEST · UNCLASSIFIED",
+    name:"The Unforgivable",
+    price:"POA",
+    description:"There are no words. This is outside our standard classification system.",
+    advice:"Jim's recommendation: We may not be able to help you."
+  }
+];
+
+const slider = document.getElementById("apologySlider");
+
+function updateAssessment() {
+  const item = levels[slider.value];
+
+  document.getElementById("resultLevel").textContent = item.level;
+  document.getElementById("resultName").textContent = item.name;
+  document.getElementById("resultPrice").textContent = item.price;
+  document.getElementById("resultDescription").textContent = item.description;
+  document.getElementById("resultAdvice").textContent = item.advice;
+}
+
+slider.addEventListener("input", updateAssessment);
+updateAssessment();
+</script>
 
 </body>
 </html>
