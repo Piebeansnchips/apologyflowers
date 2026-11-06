@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apology Flowers | Because Sorry Isn't Enough</title>
+<meta name="description" content="Premium flowers for people who have spectacularly messed up. Find your perfect apology bouquet.">
+<style>
+:root {
+  --cream: #f8f5ef;
+  --green: #263e32;
+  --pink: #d9a6a2;
+  --dark: #252923;
+  --muted: #77776e;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--dark);
+  font-family: Arial, sans-serif;
+}
+header {
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7e0d5;
+}
+.logo {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  color: var(--green);
+  letter-spacing: -1px;
+}
+.logo span { color: #b77c79; }
+nav { display: flex; gap: 25px; }
+nav a {
+  text-decoration: none;
+  color: var(--green);
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.hero {
+  min-height: 560px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 65px 8%;
+  gap: 45px;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #a36f6c;
+  font-size: 11px;
+  font-weight: bold;
+}
+h1 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: clamp(48px, 6vw, 76px);
+  line-height: 1.05;
+  color: var(--green);
+  margin: 20px 0;
+}
+.hero p {
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 440px;
+}
+.btn {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  padding: 16px 27px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.hero-image {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+.intro {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+}
+.intro h2 {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: normal;
+  margin: 12px 0;
+}
+.intro p {
+  color: #d8ddd6;
+  line-height: 1.8;
+}
+section.products {
+  padding: 85px 7%;
+  text-align: center;
+}
+h2.section-title {
+  font-family: Georgia, serif;
+  color: var(--green);
+  font-size: 43px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+.sub {
+  color: var(--muted);
+  margin-bottom: 45px;
+  line-height: 1.7;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  text-align: left;
+}
+.product {
+  background: white;
+  padding-bottom: 25px;
+}
+.product img {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+}
+.product-content { padding: 20px 22px; }
+.product h3 {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: normal;
+  color: var(--green);
+  margin: 7px 0;
+}
+.price {
+  color: #a36f6c;
+  font-size: 23px;
+  font-family: Georgia, serif;
+  margin: 12px 0;
+}
+.product p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.level {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a36f6c;
+}
+.note {
+  font-size: 11px;
+  color: #888;
+  font-style: italic;
+  margin-top: 15px;
+}
+.how {
+  background: #eee9df;
+  padding: 75px 8%;
+  text-align: center;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-top: 45px;
+}
+.steps h3 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  color: var(--green);
+  font-weight: normal;
+}
+.steps p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.about {
+  padding: 85px 15%;
+  text-align: center;
+}
+.about p {
+  max-width: 650px;
+  margin: 20px auto;
+  line-height: 1.9;
+  color: var(--muted);
+}
+footer {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+footer p { font-size: 12px; color: #d8ddd6; line-height: 1.8; }
+footer .logo { color: white; }
+@media(max-width: 750px) {
+  header { flex-direction: column; gap: 17px; }
+  nav { gap: 15px; flex-wrap: wrap; justify-content: center; }
+  nav a { font-size: 10px; }
+  .hero { grid-template-columns: 1fr; padding: 50px 7%; }
+  .hero-image { height: 300px; }
+  .grid { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: 1fr; }
+  .about { padding: 65px 8%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Apology<span>Flowers</span>.</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#flowers">The Collection</a>
+    <a href="#about">Our Story</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">The art of saying sorry</div>
+    <h1>Because sorry isn't always enough.</h1>
+    <p>Some situations require more than a text message. Whether you've put your foot in it or spectacularly crossed the line, we believe there's a bouquet for every level of regret.</p>
+    <a class="btn" href="#flowers">Find your apology</a>
+  </div>
+  <img class="hero-image"
+  src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=1000&q=85"
+  alt="Beautiful premium pink floral arrangement">
+</section>
+
+<section class="intro">
+  <div class="eyebrow">Apologies, professionally handled</div>
+  <h2>We've all been there.</h2>
+  <p>Fortunately, we've made a science out of making things better.</p>
+  <p>Five carefully considered levels of floral remorse.<br>One very important question: just how badly have you messed up?</p>
+</section>
+
+<section class="products" id="flowers">
+  <div class="eyebrow">The Apology Scale</div>
+  <h2 class="section-title">Choose your level of regret.</h2>
+  <p class="sub">An honest assessment is the first step towards forgiveness.<br>Choose wisely. Underestimating the situation can be costly.</p>
+
+  <div class="grid">
+
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=700&q=80" alt="Pink flowers">
+      <div class="product-content">
+        <div class="level">Level 01 · Minor Offence</div>
+        <h3>The Slightly Sorry</h3>
+        <div class="price">£25</div>
+        <p>For minor indiscretions. A poorly timed comment, forgetting to put the bins out or eating the last biscuit.</p>
+        <p class="note">Forgiveness likely. Damage relatively limited.</p>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=700&q=80" alt="Mixed flower bouquet">
+      <div class="product-content">
+        <div class="level">Level 02 · Moderate Incident</div>
+        <h3>The Proper Cock-Up</h3>
+        <div class="price">£45</div>
+        <p>For when you've said something you shouldn't have, forgotten something important or made a fairly spectacular tit of yourself.</p>
+        <p class="note">An apology is definitely required.</p>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=700&q=80" alt="Luxury roses">
+      <div class="product-content">
+        <div class="level">Level 03 · Serious Incident</div>
+        <h3>The Damage Limitation</h3>
+        <div class="price">£75</div>
+        <p>You've really done it this time. Voices have been raised. Friends and family are involved. Immediate action is advised.</p>
+        <p class="note">Do not attempt to defend yourself.</p>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=700&q=80" alt="Luxury floral arrangement">
+      <div class="product-content">
+        <div class="level">Level 04 · Relationship Preservation</div>
+        <h3>The Last Chance Saloon</h3>
+        <div class="price">£125</div>
+        <p>Potential divorce proceedings. Christmas has been cancelled. Your name is being discussed in the family WhatsApp group.</p>
+        <p class="note">A substantial gesture is required.</p>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=700&q=80" alt="Extravagant flower bouquet">
+      <div class="product-content">
+        <div class="level">Level 05 · Catastrophic Failure</div>
+        <h3>The Nuclear Apology</h3>
+        <div class="price">£250</div>
+        <p>There are no words. Lawyers may be involved. You have disappointed several generations. Money is no longer the concern.</p>
+        <p class="note">We recommend not making eye contact.</p>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=80" alt="Beautiful flowers">
+      <div class="product-content">
+        <div class="level">Special Request · Unclassified</div>
+        <h3>The Unforgivable</h3>
+        <div class="price">POA</div>
+        <p>For incidents that fall outside our standard classification system. Every situation is different. Some are beyond our expertise.</p>
+        <p class="note">We reserve the right to recommend counselling.</p>
+      </div>
+    </article>
+
+  </div>
+  <p class="note">All bouquets and prices are illustrative. No flowers are currently available to order.</p>
+</section>
+
+<section class="how">
+  <div class="eyebrow">Simple. Effective. Necessary.</div>
+  <h2 class="section-title">How it works.</h2>
+  <div class="steps">
+    <div>
+      <h3>01. Assess the damage.</h3>
+      <p>Be honest with yourself. This is no time for downplaying your actions.</p>
+    </div>
+    <div>
+      <h3>02. Select your bouquet.</h3>
+      <p>Choose the appropriate level of floral intervention. When in doubt, go bigger.</p>
+    </div>
+    <div>
+      <h3>03. Hope for the best.</h3>
+      <p>Deliver your apology and allow the healing process to begin. Results may vary.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="eyebrow">A little about us</div>
+  <h2 class="section-title">Born out of necessity.</h2>
+  <p>At Apology Flowers, we understand that life doesn't always go to plan. Words are sometimes insufficient, gestures are occasionally required, and some situations simply call for a really rather impressive bunch of flowers.</p>
+  <p>Our philosophy is simple: take responsibility, make amends, and never underestimate the power of a well-presented bouquet.</p>
+  <p><strong>Apology Flowers. Making things better, one bouquet at a time.</strong></p>
+</section>
+</main>
+
+<footer>
+  <div class="logo">Apology<span>Flowers</span>.</div>
+  <p>Because sometimes, sorry just isn't enough.</p>
+  <p>A parody concept website. No actual flowers are currently sold or supplied.</p>
+  <p>© 2026 Apology Flowers</p>
+</footer>
+
+</body>
+</html>
